@@ -60,6 +60,7 @@ export default function Home() {
       <Title text={"this is test"}></Title>
       <Input placeholder={"test"} ref={input} el={<img src="./favicon.ico"/>}></Input>
       <TextArea ref={textArea} placeholder="Enter any Text!!"></TextArea>
+      <BigButton text="this is button"></BigButton>
       <div className={styles.grid}>
         <a
           href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
