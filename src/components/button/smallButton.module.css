@@ -1,0 +1,5 @@
+.small{
+    padding: 0px;
+    min-height: var(--SmallButtonH) !important;
+    min-width: var(--SmallButtonW) !important;
+}

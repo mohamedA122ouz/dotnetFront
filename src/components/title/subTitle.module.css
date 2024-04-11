@@ -1,0 +1,4 @@
+.subTitle{
+    font-size:var(--SubTitleSize);
+    color:var(--SubTitleColor);
+}

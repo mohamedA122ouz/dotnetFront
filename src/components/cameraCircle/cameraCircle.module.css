@@ -1,0 +1,5 @@
+.profile{
+    width: var(--BigProfileImgW_H);
+    height: var(--BigProfileImgW_H);
+    border-radius: 50%;
+}
