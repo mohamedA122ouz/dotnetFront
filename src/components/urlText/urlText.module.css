@@ -1,0 +1,10 @@
+.url>a{
+    color:var(--ButtonColor);
+    text-decoration: underline;
+}
+.url{
+    font-weight: bold;
+    font-size: small;
+    color:var(--MainTextColor);
+    text-decoration: underline;
+}

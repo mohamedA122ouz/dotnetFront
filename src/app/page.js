@@ -4,15 +4,18 @@ import styles from "./page.module.css";
 import Button from "@/components/button/bigButton";
 import BigButton from "@/components/button/bigButton";
 import SmallButton from "@/components/button/smallButton";
-import Decleartion from "@/components/title/declearation";
+import Declearation from "@/components/title/declearation";
 import Title from "@/components/title/title";
 import TextArea from "@/components/textArea/textArea";
 import Input from "@/components/inputText/inputText";
-import { useRef } from "react";
+import { useRef, useState } from "react";
+import UrlText from "@/components/urlText/urlText";
+import AdCard from "@/components/adCard/adCard";
 
 export default function Home() {
   let textArea = useRef(null);
   let input = useRef(null);
+  let [state,update] = useState(()=>null);
   return (
     <main className={styles.main}>
       <div className={styles.description}>
@@ -47,20 +50,21 @@ export default function Home() {
           width={180}
           height={37}
           priority
-          
         />
       </div>
-      <SmallButton text={"Button"} onClick={()=>{
-        window.alert(textArea.current.value)
+      <SmallButton text={"Update Card"} onClick={()=>{
+        update(Math.random());
       }}></SmallButton>
       <BigButton text={"Button"} onClick={()=>{
         window.alert(input.current.value)
       }}></BigButton>
-      <Decleartion title={"Welcome"} subTitle={"this is welcome screen"}></Decleartion>
+      <Declearation title={"Welcome"} subTitle={"this is welcome screen"}/>
       <Title text={"this is test"}></Title>
       <Input placeholder={"test"} ref={input} el={<img src="./favicon.ico"/>}></Input>
       <TextArea ref={textArea} placeholder="Enter any Text!!"></TextArea>
       <BigButton text="this is button"></BigButton>
+      <UrlText text={"don't forget"} urlText={"start"} href={"#"} target={"_blank"}></UrlText>
+      <AdCard title={(input.current.value || "welcome")} alt={"this is a test"} details={(textArea.current.value || "add details")} src={"./favicon.ico"}></AdCard>
       <div className={styles.grid}>
         <a
           href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"

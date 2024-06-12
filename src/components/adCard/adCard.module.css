@@ -1,0 +1,36 @@
+.adCard{
+    display: grid;
+    grid-template-columns: repeat(4, var(--AdCardIconW));
+    gap: 10px;
+    padding:10px;
+    background-color: var(--ElementsBackgroud);
+    border-radius: var(--RadiusOfAllElements);
+}
+.text{
+    grid-column: span 3;
+}
+.titleSize{
+    font-size: 13px;
+}
+.detailsSize{
+    font-size: 12px;
+}
+.smallButton{
+    grid-column: -4/-2;
+}
+.img{
+    height: var(--AdCardIconH);
+    margin: auto;
+}
+.imgContainer{
+    width: var(--AdCardIconW);
+    height: var(--AdCardIconH);
+    overflow:hidden;
+    display: flex;
+}
+.topContainer{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -71,6 +71,11 @@
     --ElementsBackgroud:#4f4f4f80;
     --SmallIconsH:24px;
     --SmallIconsW:24px;
+    --AdCardIconW:68px;
+    --AdCardIconH:55px;
+    --AdCardTitleSize:13px;
+    --AdCardDetailsSize:12px;
+    
 }
 
 @media (prefers-color-scheme: dark) {
