@@ -8,4 +8,5 @@ const Input = forwardRef(({placeholder,el,className,type},ref) => {
         </div>
     );
 });
+Input.displayName = "Input";
 export default Input;
