@@ -1,0 +1,55 @@
+.container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto auto auto;
+    gap: 30px;
+    height: max-content;
+}
+.declaration{
+    grid-column: 2;
+}
+.img{
+    grid-column: 2;
+    margin: auto;
+    width: 250px;
+    height: 250px;
+}
+.link{
+    grid-column: 2;
+    margin: auto;
+}
+.input{
+    grid-column: 2;
+    width: 100% !important;
+}
+.bigButton{
+    width: max-content;
+    grid-column: 2;
+    margin:auto;
+}
+.signup{
+    position: absolute;
+    bottom: 0px;
+    left:50%;
+    transform: translateX(-50%);
+}
+
+@media (min-width:900px) {
+    .img{
+        grid-row:1;
+        grid-row-end:6;
+        grid-column: 3;
+        width: 400px;
+        height: 400px;
+    }
+    .container{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100%;
+        height: 50%;
+        transform: translate(-50%,-50%);
+        height: 500px;
+        aspect-ratio: 1/16;
+    }
+}
