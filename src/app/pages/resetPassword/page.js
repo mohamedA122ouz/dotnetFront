@@ -5,7 +5,7 @@ import Input from "@/app/components/inputText/inputText";
 import Declearation from "@/app/components/title/declearation";
 import { useRef } from "react";
 
-export default function resetPassword(){
+export default function ResetPassword(){
     let password1 = useRef(()=>null);
     let password2 = useRef(()=>null);
     function checkPassword(){
