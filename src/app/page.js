@@ -6,7 +6,7 @@ import Title from "./components/title/title";
 import SubTitle from "./components/title/subTitle";
 import Declearation from "./components/title/declearation";
 import UrlText from "./components/urlText/urlText";
-import { controlAllElements } from "./components/controllingStuff/controllingStuff";
+import { stateAction } from "./components/controllingStuff/controllingStuff";
 
 
 export default function Home() {
@@ -21,14 +21,14 @@ export default function Home() {
   function signIn() {
     if (userName.current.value === fakeData.userName) {
       if (password.current.value === fakeData.password) {
-        controlAllElements(image.current, userName.current, password.current, "Success");
+        stateAction("success", image.current, userName.current, password.current);
       }
       else {
-        controlAllElements(image.current, userName.current, password.current, "faild");
+        stateAction("faild", image.current, userName.current, password.current);
       }
     }
     else {
-      controlAllElements(image.current, userName.current, password.current, "faild");
+      stateAction("faild", image.current, userName.current, password.current);
     }
   }
   return (
@@ -36,12 +36,12 @@ export default function Home() {
       <div className={"container"}>
         <img className={"img"} ref={image} src="../earth.png" alt="earth.png" />
         <Declearation title={"Login"} subTitle={"Sign-in to continue"} className={"declaration"} />
-        <Input className={"input"} ref={userName} placeholder={"Enter your username"} />
-        <Input className={"input"} ref={password} type="password" placeholder={"Enter your password"} />
+        <Input el={<img src="../person.svg" alt="personIcon" />} className={"input"} ref={userName} placeholder={"Enter your username"} />
+        <Input el={<img src="../key.svg" alt="keyIcon" />} className={"input"} ref={password} type="password" placeholder={"Enter your password"} />
         <BigButton className={"bigButton"} text={"sign in"} onClick={signIn} />
-        <UrlText className={"link"} href={"./"} text={""} urlText={"Forgot password?"} />
+        <UrlText className={"link"} href= {{pathname:"./pages/resetPassword"}} text={""} urlText={"Forgot password?"} />
       </div>
-      <UrlText className={"signup"} text={"don't have accout!"} urlText={"sign-up"} />
+      <UrlText href= {{pathname:"./pages/createAccount"}}className={"signup"} text={"don't have accout!"} urlText={"sign-up"} />
     </>
   )
 }
