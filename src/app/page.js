@@ -9,16 +9,11 @@ import UrlText from "./components/urlText/urlText";
 import { stateAction } from "./components/controllingStuff/controllingStuff";
 /**
 *@param {object} json
+*@param {string} endpoint
 *@returns {Promise}
 */
 
-function connectServer(json) {
-  return fetch("https://localhost:7124/api/getData/login", {
-    method: "POST",
-    headers: { "content-type": "application/json" },
-    body: JSON.stringify(json),
-  });
-}
+
 export default function Home() {
   //username and password
   let userName = useRef(() => null);
