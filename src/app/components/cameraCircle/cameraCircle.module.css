@@ -1,5 +1,6 @@
 .profile{
     width: var(--BigProfileImgW_H);
     height: var(--BigProfileImgW_H);
+    background-color: white;
     border-radius: 50%;
 }
