@@ -4,8 +4,8 @@
     background-color: var(--ElementsBackgroud);
     border-radius: var(--RadiusOfAllElements);
     margin-top: 15px;
-    height: 150px;
-    width: 400px;
+    height: var(--AdCardH);
+    width: var(--AdCardW);
 
 }
 .text{
