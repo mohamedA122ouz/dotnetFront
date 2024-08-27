@@ -64,8 +64,8 @@
     --InputH:42px;
     --TextAreaW:340px;
     --TextAreaH:186px;
-    --AdCardW:400px;
-    --AdCardH:150px;
+    --AdCardW:400px;/*it was 340px*/
+    --AdCardH:150px;/*it was 104px*/
     --PaymentInfoCardW:340px;
     --PaymentInfoCardH:48px;
     --ElementsBackgroud:#4f4f4f80;
