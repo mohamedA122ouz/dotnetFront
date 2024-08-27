@@ -16,15 +16,12 @@ export default function AdCard({
   return (
     <div className={styleSheet.adCard}>
       <div className={styleSheet.topContainer}>
-        <div className={styleSheet.imgContainer}>
-          <img src={src} alt={alt} className={styleSheet.img}></img>
-        </div>
+        <div className={styleSheet.imgContainer} style={{backgroundImage:`url(${src})`,backgroundPosition:"center",backgroundSize:"contain",backgroundRepeat:"no-repeat"}}></div>
         <div className={styleSheet.text}>
           <Title text={title} className={styleSheet.titleSize} />
           <SubTitle text={details} className={styleSheet.detailsSize} />
         </div>
       </div>
-
       <SmallButton
         text={btnText || "Show Details"}
         className={styleSheet.smallButton}

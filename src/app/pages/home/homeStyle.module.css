@@ -16,8 +16,18 @@
         align-items: center;
     }
   }
-.welcomemsg{
+/* .welcomemsg{
     padding: 30px 30px;
     display: flex;
     justify-content: center;
+    color:white;
+} */
+.head{
+    padding: 30px 30px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    color:white;
+    gap:10px;
+    flex-direction: column;
 }
