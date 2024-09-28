@@ -1,0 +1,16 @@
+.customButton:hover{
+    box-shadow: 0 0 20px 0 var(--ButtonColor);
+}
+.customButton{
+    padding: 15px 20px;
+    min-width: var(--BigButtonW);
+    min-height: var(--BigButtonH);
+    background-color: var(--ButtonColor);
+    color:var(--MainTextColor);
+    border-radius: var(--RadiusOfButtons);
+    outline: none;
+    border: 0;
+    box-shadow: 0 0 0px 0 var(--ButtonColor);
+    cursor: pointer;
+    transition: 250ms;
+}

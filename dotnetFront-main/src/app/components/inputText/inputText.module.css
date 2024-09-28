@@ -1,0 +1,35 @@
+.input>div>img {
+    width: var(--SmallIconsW);
+    height: var(--SmallIconsH);
+}
+
+.input>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input {
+    display: flex;
+    gap: 12px;
+    width: var(--InputW);
+    height: var(--InputH);
+    background-color: var(--ElementsBackgroud);
+    padding-left: 20px;
+    border-radius: var(--RadiusOfButtons);
+    box-shadow: 0 0 0px 0 var(--ButtonColor);
+    transition: 250ms;
+}
+
+.input>input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    width: 90%;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.input:has(input:focus) {
+    box-shadow: 0 0 15px 0 var(--ButtonColor);
+}

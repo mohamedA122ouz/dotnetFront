@@ -1,0 +1,19 @@
+.textArea::placeholder{
+    color:var(--SubTitleColor);
+}
+.textArea:focus{
+    box-shadow: 0 0 15px 0 var(--ButtonColor);
+
+}
+.textArea{
+    height: var(--TextAreaH);
+    width: var(--TextAreaW);
+    background-color: var(--ElementsBackgroud);
+    resize: none;
+    border-radius:var(--RadiusOfAllElements) ;
+    transition: 250ms;
+    box-shadow: 0 0 0 0 var(--ButtonColor);
+    padding:20px;
+    outline: none;
+    border: none;
+}
