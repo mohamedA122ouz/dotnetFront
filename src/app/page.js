@@ -8,8 +8,6 @@ import Declearation from "./components/title/declearation";
 import UrlText from "./components/urlText/urlText";
 import { stateAction } from "./components/controllingStuff/controllingStuff";
 import connectServer from "./components/connectServer/connectServer";
-import { redirect } from "next/navigation";
-import { getCookie } from "cookies-next";
 import { useRouter } from "next/navigation";
 
 /**
