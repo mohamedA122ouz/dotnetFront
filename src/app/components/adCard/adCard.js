@@ -15,13 +15,13 @@ export default function AdCard({ src, alt, title, details, btnText, url }) {
         <Title text={title} className={styleSheet.titleSize} />
         <SubTitle text={details} className={styleSheet.detailsSize} />
       </div>
-      <SmallButton
+      {/* <SmallButton
         onClick={() => {
           redirect("/login");
         }}
         text={btnText || "Show Details"}
         className={styleSheet.smallButton}
-      ></SmallButton>
+      ></SmallButton> */}
     </div>
   );
 }

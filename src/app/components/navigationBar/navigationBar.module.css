@@ -1,18 +1,25 @@
 .header{
+    overflow-y: scroll;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 15px;
     height: 750px;
     position: fixed;
     padding-top: 50px;
     width: fit-content;
     width: -moz-fit-content;
-
+    width: -webkit-content;
+    height: 100vh;
+    padding: 10px 0px;
+    align-items: center;
+    transition: 400ms ease-out;
 }
 .profileholder{
     display: flex;
     flex-direction: column;
     width: 100%;
+    width: fit-content;
+    width: -webkit-content;
     width: -moz-fit-content;
     justify-content: center;
     align-items: center;
@@ -25,3 +32,6 @@
 .header button{
     display: none;
 }
+.header::-webkit-scrollbar{
+    display: none;
+} 
